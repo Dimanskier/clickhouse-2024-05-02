@@ -14,6 +14,7 @@
 11. Построение ETL с airflow.
  
 ## Полезные материалы
+- [Практические задания](https://docs.google.com/spreadsheets/d/19nxarGSCdfW8ydpXn9uz8tququtPuDWdB6481IKGSS0/edit?usp=sharing)
 - [Notion](https://cuddly-blob-cc7.notion.site/Clickhouse-Data-361edfceabb647c48829529090d9f24f)
 - [Documentation: https://clickhouse.tech/](https://clickhouse.tech/)
 - [Altinity Blog — ClickHouse Best Practices, Tips, Tricks, & More](https://www.altinity.com/blog) 
