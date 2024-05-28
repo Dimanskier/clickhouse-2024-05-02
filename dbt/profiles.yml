@@ -8,12 +8,8 @@ covid_dwh:
     dev:
       type: clickhouse
       schema: default
-      host: "{{ env_var('DBT_HOST') }}"
-      port: 8443
-      user: "{{ env_var('DBT_USER') }}"
-      password: "{{ env_var('DBT_PASSWORD') }}"
-      secure: True
-      verify: False
+      host: clickhouse
+      port: 8123
     ci:
       type: clickhouse
       host: clickhouse
