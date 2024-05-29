@@ -3,3 +3,9 @@
 /cloud/.env
 /cloud/terraform.tfstate
 /cloud/.terraform.lock.hcl
+/dbt/logs/
+/dbt/dbt_packages/
+/logs/dbt.log
+/cloud/terraform
+/cloud/terraform.tfstate.backup
+/cloud/terraform.zip
