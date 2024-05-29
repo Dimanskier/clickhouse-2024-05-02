@@ -6,6 +6,8 @@
 
 Предлагается проанализировать датасет с kaggle (информация о винах): https://www.kaggle.com/datasets/zynicide/wine-reviews
 
+(альтернативная ссылка: https://drive.google.com/file/d/1qFJhbJBQ8dWKXRM2ZoqxXr5FMqzLYhxx/view?usp=sharing)
+
 Порядок действий:
 - скачать датасет (файл .csv)
 - проанализировать состав колонок в скачанном файле. Выбрать наиболее подходящий тип для хранения данных в каждой из колонок.
