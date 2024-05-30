@@ -333,4 +333,24 @@ insert into Manager(ManagerID, PersonID, DepartmentID) values(3, 35, 2);
 
 Структура итогового хранилища:
 
+```sql
+create database company_dwh;
+
+use company_dwh;
+
+CREATE table src_manager (
+ 	managerid Int32,
+  	personid  Int32,
+  	departmentid Int32
+) Engine = PostgreSQL('localhost:6432', 'hr_db', 'manager', 'postgres', 'postgres', 'public');
+
+CREATE table src_department (
+ 	departmentid Int32,
+  	name String
+) Engine = PostgreSQL('localhost:6432', 'hr_db', 'department', 'postgres', 'postgres', 'public');
+
+CREATE table stg_manager Engine = MergeTree() ORDER BY manager_id AS 
+select managerid as manager_id, personid as person_id, departmentid as department_id, now() as load_date, 'hr_db' as source from src_manager;
+```
+
 ![DB schema](company_dwh.png)
